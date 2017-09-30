@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4081632561737494}
   - component: {fileID: 212816670972829026}
+  - component: {fileID: 58003505971243034}
   - component: {fileID: 114502012105698080}
   m_Layer: 0
   m_Name: waypoint
@@ -41,6 +42,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58003505971243034
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161451083530656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.51
 --- !u!114 &114502012105698080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,9 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ce537185c9e0c4ea913011231adf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 0}
   reachableNodes: []
   col: {fileID: 0}
+  nextWaypoint: {fileID: 0}
   loc: {fileID: 0}
 --- !u!212 &212816670972829026
 SpriteRenderer:

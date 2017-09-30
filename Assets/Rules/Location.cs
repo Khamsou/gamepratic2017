@@ -5,4 +5,10 @@ using UnityEngine;
 public class Location : Node
 {
 	public Location loc;
+
+	void Awake()
+	{
+//		this.gameObject.SetActive(false);
+	}
+
 }

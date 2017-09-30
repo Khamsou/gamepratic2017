@@ -2,24 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InnClass : MonoBehaviour
+public abstract class Node : MonoBehaviour
 {
-	public List<RoomClass> rooms;
+	public List<Node> reachableNodes = new List<Node>();
 
 	// Use this for initialization
-	void Awake()
-	{
-
-	}
-
-	void Start()
-	{
+	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update()
-	{
+	void Update () {
 		
 	}
 }

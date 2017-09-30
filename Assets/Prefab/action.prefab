@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4525061907091818}
   - component: {fileID: 212460956315009128}
+  - component: {fileID: 58487632790639884}
   - component: {fileID: 114063978508134686}
   m_Layer: 0
   m_Name: action
@@ -41,6 +42,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58487632790639884
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803708058953048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.51
 --- !u!114 &114063978508134686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,10 +68,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa9ba405e150654d90594eb29c272c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 0}
   reachableNodes: []
   col: {fileID: 0}
+  cameraPosition: {fileID: 0}
   loc: {fileID: 0}
+  action: 0
 --- !u!212 &212460956315009128
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4093992872591752}
   - component: {fileID: 212689026451429128}
+  - component: {fileID: 58458809439423582}
   - component: {fileID: 114352650613651110}
   m_Layer: 0
   m_Name: location
@@ -41,6 +42,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58458809439423582
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1029479308196830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.51
 --- !u!114 &114352650613651110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +68,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f753269e47def1742873dddd29d39ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 0}
   reachableNodes: []
   col: {fileID: 0}
   loc: {fileID: 0}
@@ -88,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 41fe199cb1c77864798d87b681aa58c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a76f032e390aa2a4b92656b08c9be450, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
