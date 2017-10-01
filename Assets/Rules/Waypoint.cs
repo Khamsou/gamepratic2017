@@ -15,14 +15,14 @@ public class Waypoint : Node
 	void OnMouseDown()
 	{
 		GoToNextPosition();
-		print(Camera.main.transform.position);
+		print("Camera : " + Camera.main.transform.position);
 	}
 
 	void GoToNextPosition()
 	{
 		Vector3 zCorrectedRoomCenter = Vector3.Scale(nextWaypoint.loc.transform.position, new Vector3(1, 1, 0)) + new Vector3(0, 0, -10);
 		Camera.main.transform.position = zCorrectedRoomCenter;
-		print(nextWaypoint.loc.gameObject.activeSelf);
+		print(nextWaypoint.gameObject.transform.position);
 //		nextWaypoint.loc.gameObject.SetActive(true);
 	}
 
