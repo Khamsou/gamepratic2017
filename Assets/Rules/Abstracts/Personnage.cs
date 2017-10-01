@@ -7,6 +7,7 @@ public abstract class Personnage : MonoBehaviour
 	public List<Prop> cares;
 	public int state;
 	public string envState;
+	public string DialogueLine;
 
 	// Use this for initialization
 	void Start()

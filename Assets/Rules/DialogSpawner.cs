@@ -29,6 +29,9 @@ public class DialogSpawner : MonoBehaviour {
 			case ChoixDialogue.accueil_0:
 				Instantiate(Resources.Load("Dialogs/accueil_0"), Canvas);			
 				break;
+			case ChoixDialogue.rappel_0:
+				Instantiate(Resources.Load("Dialogs/rappel_0"), Canvas);			
+				break;
 		}
 	}
 }

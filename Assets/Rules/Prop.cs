@@ -31,7 +31,7 @@ public class Prop : Node
 		public Sprite ss1;
 		public Sprite ss2;
 		public Sprite ss3;
-	};
+	}
 
 	public Transform cameraPosition;
 	public Location loc;
@@ -50,6 +50,10 @@ public class Prop : Node
 
 	void OnMouseDown()
 	{
+		state = (++state)%3;
+
+		print(state);
+/*
 		switch (action)
 		{
 			case Actions.Discuter:
@@ -61,6 +65,6 @@ public class Prop : Node
 
 				break;
 		}
-	}
+*/	}
 
 }
