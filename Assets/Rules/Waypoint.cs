@@ -22,7 +22,7 @@ public class Waypoint : Node
 	{
 		Vector3 zCorrectedRoomCenter = Vector3.Scale(nextWaypoint.loc.transform.position, new Vector3(1, 1, 0)) + new Vector3(0, 0, -10);
 		Camera.main.transform.position = zCorrectedRoomCenter;
-
+		print(nextWaypoint.loc.gameObject.activeSelf);
 //		nextWaypoint.loc.gameObject.SetActive(true);
 	}
 

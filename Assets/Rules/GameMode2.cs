@@ -8,12 +8,15 @@ public class GameMode2 : MonoBehaviour {
 	public string DialogueLine;
 	public AudioClip Clang1C;
 	private SoundManager _soundManager;
+	private FadeBehaviour _fade;
+	private FadeSpriteBehaviour _fadeSprite;
 	private ChoixDialogue _thisDialogue;
 
 	void Start() {
 		CurrentGameMode = 0;
 		_thisDialogue = (ChoixDialogue)System.Enum.Parse(typeof(ChoixDialogue), DialogueLine);
-		_soundManager = FindObjectOfType<SoundManager>();
+		_fade = FindObjectOfType<FadeBehaviour>();
+		_fadeSprite = FindObjectOfType<FadeSpriteBehaviour>();
 	}
 
 	void Update() {
@@ -24,7 +27,9 @@ public class GameMode2 : MonoBehaviour {
 				// setGameMode(1);
 				// lance le dialogue
 				// FindObjectOfType<DialogSpawner>().setDialog(_thisDialogue);
-				_soundManager.PlaySingleSound(Clang1C);
+				// _soundManager.PlaySingleSound(Clang1C);
+				// _fade.startFadeIn();
+				_fadeSprite.startSpriteFadeIn();
 			}
 		}
 

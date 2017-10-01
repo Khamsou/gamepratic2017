@@ -11,4 +11,9 @@ public class Location : Node
 //		this.gameObject.SetActive(false);
 	}
 
+	void Update()
+	{
+
+	}
+
 }
